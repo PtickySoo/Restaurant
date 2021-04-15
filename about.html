@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+<title>About Us</title>    
+<link rel ="stylesheet" href="styles5.css">   
+        <link rel="shortcut icon" type="image/png" href="Images/logo.png">
+  <meta charset="UTF-8">
+    <meta name="description" content="Fresh,Meats and groceries in Restaurant">
+    <meta name="keywords" content="Food,Chefs,Meat,Produce,Menu">
+</head>
+    <body>
+      <nav class="hero">
+           <nav class="nav-bar">
+            <nav class="nav-logo">
+                <img src="Images/logo.png">
+            </nav>
+         <nav class="nav-links" id="nav-links"> 
+             <i class="fa fa-close" onclick="closeMenu()" ></i>
+       <ul>
+        <li><a href="index.html">Specials</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="homePage.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li> 
+            <li><a href ="kidsOptions.html">Kids Options</a></li>
+        </ul> 
+               </nav>
+                 </nav>    
+          <h1>About us</h1>
+          <nav class="container">
+              <nav class="indicator">
+              <span class="btn active"></span>
+                   <span class="btn"></span>
+                   <span class="btn"></span>
+              </nav>
+              <nav class="testimonial">
+             <nav class="slide-row" id="slide">
+        <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>Founded in 1913 Fake Mc Donald's Is an Irish based michellen star restaurant,
+                we serve some of the finest cuisine you will find in the country and pride ourselves on
+                tailored experiences for each customer who comes in or makes a reservation</p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/Backdrop.jfif">
+            </nav>
+            </nav>
+       <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>All our meats are 100% irish sourced as a part of our initiative to provide jobs an income into the local communitys across the country,
+                We have over 25 restaraunts across the country with our main one located in Sligo</p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/RawMeat.jpg">
+            </nav>
+            </nav>
+             <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>We offer a wide variety of high quality vegatarian options aswell including veg meats and more</p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/Veg2.jpg">
+            </nav>
+            </nav>
+        </nav>
+          </nav>
+     </nav>
+            </nav>    
+        <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+            
+            btn[0].onclick = function()
+            {
+                slide.style.transform = "translateX(0px)";
+                for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function()
+            {
+                slide.style.transform = "translateX(-800px)";
+                 for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function()
+            {
+                slide.style.transform = "translateX(-1600px)";
+                 for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+        </script>
+    </body>
+</htm>

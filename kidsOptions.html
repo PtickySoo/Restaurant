@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+<title>Kids Options</title>   
+     <link rel="shortcut icon" type="image/png" href="Images/logo.png">
+<link rel ="stylesheet" href="styles6.css">   
+     <meta charset="UTF-8">
+</head>
+    <body>
+      <nav class="hero">
+           <nav class="nav-bar">
+            <nav class="nav-logo">
+                <img src="Images/logo.png">
+            </nav>
+         <nav class="nav-links" id="nav-links"> 
+             <i class="fa fa-close" onclick="closeMenu()" ></i>
+       <ul>
+        <li><a href="index.html">Specials</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="homePage.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li> 
+           <li><a href ="kidsOptions.html">Kids Options</a></li>
+        </ul> 
+               </nav>
+                 </nav>    
+          <h1>Kids Options</h1>
+          <nav class="container">
+              <nav class="indicator">
+              <span class="btn active"></span>
+                   <span class="btn"></span>
+                   <span class="btn"></span>
+              </nav>
+              <nav class="testimonial">
+             <nav class="slide-row" id="slide">
+        <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>A variety of different egg cups from meat to veg </p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/eggCup.jpg">
+            </nav>
+            </nav>
+       <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>A little way to get your kids to eat some veggies by maiking a carrot smoothie</p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/carrot.jpg">
+            </nav>
+            </nav>
+             <nav class= "slide-col">
+            <nav class= "user-text">
+            <p>Pancake starters </p>
+                <h3>Fake Mc Donald's</h3>
+                <p>Fake Mc Donald's tm</p>
+            </nav>
+            <nav class="user-img">
+                <img src="Images/pancake.jpg">
+            </nav>
+            </nav>
+        </nav>
+          </nav>
+     </nav>
+            </nav>    
+        <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+            
+            btn[0].onclick = function()
+            {
+                slide.style.transform = "translateX(0px)";
+                for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function()
+            {
+                slide.style.transform = "translateX(-800px)";
+                 for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function()
+            {
+                slide.style.transform = "translateX(-1600px)";
+                 for(i=0;i<3;i++)
+                    {
+                        btn[i].classList.remove("active")
+                    }
+                this.classList.add("active");
+            }
+        </script>
+    </body>
+</htm>
